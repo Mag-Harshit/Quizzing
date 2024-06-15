@@ -1,4 +1,13 @@
+
 @media (max-width: 992px) {
+
+  .container-fluid{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+  }
+
     .navbar-brand {
       margin-right: auto; /* Adjust margin for smaller screens */
     }
@@ -8,12 +17,18 @@
     }
   
     /* Adjust form input width */
-    .form-control {
+    .searchMenu {
+      margin: 20px 0;
       width: auto; /* Use auto width for responsiveness */
     }
   }
   
   @media (max-width: 768px) {
+
+    nav{
+      height: auto;
+    }
+
     .form-control {
       width: 100%; /* Use full width for small screens */
       margin-bottom: 10px; /* Add some margin to separate form input from buttons */
@@ -27,12 +42,8 @@
       flex-direction: column; /* Stack nav items vertically */
     }
   
-    .d-flex {
-      flex-direction: column; /* Stack buttons vertically */
-    }
   
-    .btn {
-      width: 100%; /* Make buttons full-width */
-      margin-bottom: 5px; /* Add some space between buttons */
+    .SignButton {
+      margin-bottom: 5px;
     }
   }
