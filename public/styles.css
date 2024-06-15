@@ -2,6 +2,29 @@
 .form-control{
   width: 600px;
 }
+.signHeading {
+  color: #403754;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-family:'Roboto';
+    font-size: 40px;
+}
+
+.emailEntry{
+  margin: 10px;
+  width: 35%;
+
+}
+.passwordEntry{
+  width: 35%;
+  margin-bottom:10px;
+}
+
+.signBtn{
+  margin-top: 20px;
+  width:8%;
+  width: 20%; max-width: 500px;
+}
 
 @media (max-width: 992px) {
 
@@ -23,11 +46,63 @@
     /* Adjust form input width */
     .searchMenu {
       margin: 20px 0;
-      width: auto; /* Use auto width for responsiveness */
+      width: 40rem; /* Use auto width for responsiveness */
     }
+
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
+
+    .container-fluid{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+  
+    }
+  
+      .navbar-brand {
+        margin-right: auto; /* Adjust margin for smaller screens */
+      }
+      
+      .SignInButton {
+        margin-left: 0; /* Reset margin for smaller screens */
+      }
+    
+      /* Adjust form input width */
+      .searchMenu {
+        margin: 20px 0;
+        width: 30rem; /* Use auto width for responsiveness */
+      }
+
+    }
+
+    @media (max-width: 576px) {
+
+      .container-fluid{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    
+      }
+    
+        .navbar-brand {
+          margin-right: auto; /* Adjust margin for smaller screens */
+        }
+        
+        .SignInButton {
+          margin-left: 0; /* Reset margin for smaller screens */
+        }
+      
+        /* Adjust form input width */
+        .searchMenu {
+          margin: 20px 0;
+          width: 20rem; /* Use auto width for responsiveness */
+        }
+  
+      }
+  
+    
+  @media (max-width: 576px) {
 
     nav{
       height: auto;
