@@ -27,14 +27,14 @@
     }
   }
   
-  @media (max-width: 576px) {
+  @media (max-width: 400px) {
 
     nav{
       height: auto;
     }
 
     .form-control {
-      width: 20em !important; 
+      width: 15em !important; 
       margin-bottom: 10px; /* Add some margin to separate form input from buttons */
     }
   

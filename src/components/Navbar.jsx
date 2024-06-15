@@ -7,7 +7,7 @@ const Navbar = () => {
     <div>
       <a className="navbar-brand" href="#">Quizing</a>
       </div>
-        <form className="d-flex searchMenu mx-5" role="search">
+        <form className="d-flex searchMenu mx-1" role="search">
           <input className="form-control me-2" style={{width:'600px'}}type="search" placeholder="Search a quiz" aria-label="Search"/>
           <button className="btn btn-outline-success" type="submit">Search</button>
         </form>
