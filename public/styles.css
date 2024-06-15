@@ -1,0 +1,38 @@
+@media (max-width: 992px) {
+    .navbar-brand {
+      margin-right: auto; /* Adjust margin for smaller screens */
+    }
+    
+    .SignInButton {
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  
+    /* Adjust form input width */
+    .form-control {
+      width: auto; /* Use auto width for responsiveness */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form-control {
+      width: 100%; /* Use full width for small screens */
+      margin-bottom: 10px; /* Add some margin to separate form input from buttons */
+    }
+  
+    .navbar-collapse {
+      flex-direction: column; /* Stack nav items vertically */
+    }
+  
+    .navbar-nav {
+      flex-direction: column; /* Stack nav items vertically */
+    }
+  
+    .d-flex {
+      flex-direction: column; /* Stack buttons vertically */
+    }
+  
+    .btn {
+      width: 100%; /* Make buttons full-width */
+      margin-bottom: 5px; /* Add some space between buttons */
+    }
+  }
