@@ -3,6 +3,11 @@
   width: 600px;
   margin-bottom: 10px;
 }
+
+.profile{
+  border: 0;
+  background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+}
 .signHeading {
   color: #403754;
     margin-bottom: 10px;
@@ -29,6 +34,9 @@
 
 @media (max-width: 992px) {
 
+  .HOME{
+    margin-top: 20px;
+  }
   .container-fluid{
     display: flex;
     flex-direction: column;
@@ -110,7 +118,7 @@
     }
 
     .form-control {
-      width: 15em !important; 
+      width: 20em !important; 
       margin-bottom: 10px; /* Add some margin to separate form input from buttons */
     }
   

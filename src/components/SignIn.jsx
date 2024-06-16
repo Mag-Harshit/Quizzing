@@ -29,7 +29,7 @@ const SignIn = (props) => {
           const user=userCredential.user;
           console.log(user);
           console.log(user.uid)
-          navigate('/Reminder')
+          navigate('/')
           
           window.location.reload();
       })
