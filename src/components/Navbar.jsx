@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
   const navigate = useNavigate();
+  const [loggedIn, setLoggedIn] = useState(false)
+  useEffect(()=>{
+    if(props.user){
+      setLoggedIn(true)
+    }else{
+      setLoggedIn(false)
+    }
+  })
 
   return (
     <div>
@@ -16,13 +24,16 @@ const Navbar = () => {
             <button className="btn btn-outline-success" type="submit">Search</button>
           </form>
           <div className='d-flex'>
-            <button type="button" className='btn btn-primary SignButton border' onClick={() => navigate('/Login')}>
+            {loggedIn?<a><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg></a>:<button type="button" className='btn btn-primary SignButton border' onClick={() => navigate('/Login')}>
               Sign In
-            </button>
-            <button type="button" className='btn btn-light mx-2 SignButton border-primary'>Sign Up</button>
+            </button>}
           </div>
         </div>
       </nav>
+      
     </div>
   );
 }
