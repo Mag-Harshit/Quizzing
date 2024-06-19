@@ -3,6 +3,21 @@
   width: 600px;
   margin-bottom: 10px;
 }
+.description {
+  width: 300px;
+}
+
+.Noquiz{
+  height: 100vh;
+}
+
+.Noquiz > h1 {
+  color: gray;
+}
+
+.container-fluid{
+  min-height: 64px !important;
+}
 
 .profile{
   border: 0;
